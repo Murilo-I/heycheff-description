@@ -1,0 +1,137 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Consolas', monospace;
+    background: linear-gradient(135deg, #FF9E3C, #FFD186);
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #FF9E3C;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-family: 'Sunshine', cursive;
+    font-size: 1.5rem;
+    color: #FFF001;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #FFF001;
+    color: #FF9E3C;
+}
+
+.hero {
+    background: url('assets/image/food-hero.jpg') center/cover;
+    color: white;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+    font-family: 'Sunshine', cursive;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.funcionalidades {
+    padding: 50px 20px;
+    text-align: center;
+    background: white;
+}
+
+.funcionalidades h2 {
+    font-family: 'Sunshine', cursive;
+    font-size: 2.5rem;
+    color: #E61A19;
+    margin-bottom: 30px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.card-content h3 {
+    font-family: 'Sunshine', cursive;
+    font-size: 1.5rem;
+    color: #FF9E3C;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 1rem;
+    color: #333;
+}
+
+footer {
+    background: #FF9E3C;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 20px;
+}

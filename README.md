@@ -1,4 +1,4 @@
-```markdown
+
 # Hey-Cheff 🍳
 
 Bem-vindo ao **Hey-Cheff**, uma plataforma incrível para entusiastas da culinária! Aqui, você pode explorar receitas, compartilhar suas criações e se conectar com outros chefs. Este projeto foi construído com as melhores tecnologias para garantir uma experiência de usuário excepcional.

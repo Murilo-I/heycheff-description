@@ -42,6 +42,7 @@ O Hey-Cheff foi desenvolvido com as seguintes tecnologias:
 
 ## Estrutura de Pastas
 
+```
 hey-cheff/
 ├── index.html # Página inicial
 ├
@@ -52,6 +53,7 @@ hey-cheff/
 │ ├── js/ # Scripts JavaScript
 │ └── images/ # Imagens e ícones
 └── README.md # Este arquivo
+```
 
 ## 📂 Estrutura do Projeto
 

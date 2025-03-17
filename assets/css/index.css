@@ -13,6 +13,7 @@ body {
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    line-height: 1.6;
 }
 
 * {
@@ -27,13 +28,20 @@ body {
     align-items: center;
     background-color: var(--color-header);
     position: fixed;
+    z-index: 100;
 }
 
 .navbar a {
     text-decoration: none;
     color: var(--color-text-header);
-    margin: 0 6px;
     text-align: center;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+.navbar a:hover {
+    background: var(--accent);
 }
 
 .welcome-container {
@@ -202,6 +210,13 @@ body {
 .team-card-container {
     width: 280px;
     margin: 0 0 40px 0;
+}
+
+footer {
+    background: var(--color-footer);
+    color: white;
+    text-align: center;
+    padding: .5rem;
 }
 
 @media (max-width: 500px) {

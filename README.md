@@ -1,4 +1,3 @@
-
 # Hey-Cheff 🍳
 
 Bem-vindo ao **Hey-Cheff**, uma plataforma incrível para entusiastas da culinária! Aqui, você pode explorar receitas, compartilhar suas criações e se conectar com outros chefs. Este projeto foi construído com as melhores tecnologias para garantir uma experiência de usuário excepcional.
@@ -34,6 +33,25 @@ O Hey-Cheff foi desenvolvido com as seguintes tecnologias:
 - **Vercel**: Plataforma de deploy e hospedagem para o front-end.
 
 ---
+
+## Funcionalidades
+- Páginas estáticas (Início, Sobre, Funcionalidades, Contato)
+- Menu responsivo para mobile
+- Validação simples de formulário
+- Design consistente com CSS puro
+
+## Estrutura de Pastas
+
+hey-cheff/
+├── index.html # Página inicial
+├
+├── funcionalidades.html # Detalhes das funcionalidades
+├
+├── assets/ # Arquivos estáticos
+│ ├── css/ # Estilos CSS
+│ ├── js/ # Scripts JavaScript
+│ └── images/ # Imagens e ícones
+└── README.md # Este arquivo
 
 ## 📂 Estrutura do Projeto
 

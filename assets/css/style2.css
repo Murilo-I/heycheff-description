@@ -1,10 +1,3 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* Importando fonte personalizada */
 @import url('https://fonts.googleapis.com/css2?family=Consolas:wght@700&family=Sunshine&display=swap');
 
@@ -19,6 +12,8 @@
 
 body {
     font-family: 'Consolas', sans-serif;
+    margin: 0;
+    padding: 0;
     background: var(--background);
     color: var(--text);
     line-height: 1.6;
@@ -38,12 +33,6 @@ header {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-    font-family: 'Sunshine', cursive;
-    font-size: 1.5rem;
-    color: #FFF001;
-}
-
 nav {
     display: flex;
     gap: 20px;
@@ -59,14 +48,12 @@ nav a {
 }
 
 nav a:hover {
-    background: #FFF001;
-    color: #FF9E3C;
+    background: var(--accent);
+    color: var(--primary);
 }
 
 .hero {
-    background: url('assets/image/food-hero.jpg') center/cover;
-    background: var(--accent);
-    color: var(--primary);
+    background: url('../images/food-hero.jpg') center/cover;
     color: white;
     height: 70vh;
     display: flex;
@@ -78,81 +65,46 @@ nav a:hover {
     font-family: 'Sunshine', cursive;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+.btn {
+    background: var(--accent);
+    color: var(--text);
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+    display: inline-block;
+    margin-top: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
 }
 
-.hero p {
-    font-size: 1.2rem;
+.btn:hover {
+    background: var(--primary);
+    color: white;
 }
 
-.funcionalidades {
-    padding: 50px 20px;
-    text-align: center;
-    background: white;
-}
-
-.funcionalidades h2 {
-    font-family: 'Sunshine', cursive;
-    font-size: 2.5rem;
-    color: #E61A19;
-    margin-bottom: 30px;
-
-.tecnologias {
+.feed {
     padding: 50px 20px;
     text-align: center;
 }
 
-.cards-grid {
+.recipes-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
 }
 
-.card {
+.recipe-card {
     background: white;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
-.card:hover {
+.recipe-card:hover {
     transform: translateY(-5px);
-}
-
-.card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.card-content {
-    padding: 20px;
-    text-align: left;
-}
-
-.card-content h3 {
-    font-family: 'Sunshine', cursive;
-    font-size: 1.5rem;
-    color: #FF9E3C;
-    margin-bottom: 10px;
-}
-
-.card-content p {
-    font-size: 1rem;
-    color: #333;
-}
-
-.standard-img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 15px;
 }
 
 footer {
@@ -161,4 +113,18 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: 20px;
+}
+
+/* Definir tamanho fixo para os cards */
+.recipe-card, .card, .carousel-item {
+    width: 300px;
+    height: 300px;
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse o tamanho do card */
+}
+
+/* Ajuste para garantir que a imagem ocupe todo o card sem deformar */
+.standard-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz com que a imagem cubra toda a área do card sem distorcer */
 }

@@ -5,15 +5,27 @@
     box-sizing: border-box;
 }
 
+/* Importando fonte personalizada */
+@import url('https://fonts.googleapis.com/css2?family=Consolas:wght@700&family=Sunshine&display=swap');
+
+:root {
+    --primary: #FF9E3C;
+    --secondary: #FFD186;
+    --accent: #FFF001;
+    --danger: #E61A19;
+    --text: #333;
+    --background: linear-gradient(135deg, #FF9E3C, #FFD186);
+}
+
 body {
-    font-family: 'Consolas', monospace;
-    background: linear-gradient(135deg, #FF9E3C, #FFD186);
-    color: #333;
+    font-family: 'Consolas', sans-serif;
+    background: var(--background);
+    color: var(--text);
     line-height: 1.6;
 }
 
 header {
-    background: #FF9E3C;
+    background: var(--primary);
     color: white;
     padding: 1rem 2rem;
     display: flex;
@@ -53,6 +65,8 @@ nav a:hover {
 
 .hero {
     background: url('assets/image/food-hero.jpg') center/cover;
+    background: var(--accent);
+    color: var(--primary);
     color: white;
     height: 70vh;
     display: flex;
@@ -84,6 +98,10 @@ nav a:hover {
     font-size: 2.5rem;
     color: #E61A19;
     margin-bottom: 30px;
+
+.tecnologias {
+    padding: 50px 20px;
+    text-align: center;
 }
 
 .cards-grid {
@@ -98,6 +116,9 @@ nav a:hover {
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
@@ -128,8 +149,14 @@ nav a:hover {
     color: #333;
 }
 
+.standard-img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
 footer {
-    background: #FF9E3C;
+    background: var(--primary);
     color: white;
     text-align: center;
     padding: 1rem;
